@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<link href="x/bootstrap.min.css" rel="stylesheet">
+		<link href="x/styles.css" rel="stylesheet">
+	</head>
+	<body style="margin-left:1%;margin-right:1%;margin-top:1%;margin-bottom:1%">
+		<nav class="navbar">
+			<a class="nav-link" href="home">Home</a>
+			<a class="nav-link" href="about">About</a>
+		</nav>
+
+		<h1>Plants</h1>
+		<a>Agriculture is fun (this was definitely not an excuse to learn go).</a>
+		<br>
+		<br>
+		{{range .}}
+		<a href=plant/{{.}}>{{.}}</a>
+		{{end}}
+	</body>
+</html>

@@ -1,0 +1,12 @@
+@font-face {
+font-family: "Computer Modern";
+src: url('./fonts/cmunrm.ttf') format('trueType');
+}
+
+body {
+	font-family: "Computer Modern";
+}
+
+.navbar {
+	float: right;
+}

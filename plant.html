@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+	<head>
+    <link href="../x/bootstrap.min.css" rel="stylesheet">
+    <link href="../x/styles.css" rel="stylesheet">
+  </head>
+  <body style="margin-left:1%;margin-right:1%;margin-top:1%;margin-bottom:1%">
+    <nav class="navbar">
+      <a class="nav-link" href="../home">Home</a>
+      <a class="nav-link" href="../about">About</a>
+    </nav>
+
+		<h1>{{.Title}}</h1>
+
+		yo
+		<hr>
+		{{range .Body}}
+			<div name="body" rows="20" cols="80">{{.Date}}</div>
+			<div name="body" rows="20" cols="80">
+			{{range .Images}}
+				<img src=../x/{{.}}>
+			{{end}}
+			<div name="body" rows="20" cols="80">{{printf "%s" .Caption}}</div>
+			<hr>
+		{{end}}
+		yoyo
+	</body>
+</html>
